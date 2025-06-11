@@ -6,24 +6,54 @@
   <title>Piero Birello</title>
   <style>
     @font-face {
-  font-family: 'Latin Modern Roman';
-  src: url('latinmodern-roman.otf') format('opentype');
-}
+      font-family: 'Latin Modern Roman';
+      src: url('latinmodern-roman.otf') format('opentype');
+    }
+    
     body {
       font-family: 'Latin Modern Roman', serif;
-      line-height: 1.6;
-      margin: 240px;
-      max-width: 1200px;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
+    
+    .content {
+      text-align: justify;
+      line-height: 1.6;
+      max-width: 800px;
+      width: 100%;
+      padding: 40px;
+      box-sizing: border-box;
+    }
+    
     p {
       margin-bottom: 20px;
     }
+    
     .email {
       font-weight: bold;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 880px) {
+      .content {
+        padding: 20px;
+      }
+    }
+    
+    @media (max-width: 600px) {
+      .content {
+        padding: 15px;
+      }
     }
   </style>
 </head>
 <body>
+  
+  <div class="content">
 
   <p>Hello world, it's <strong style="color: darkred;">Piero Birello</strong>. I am a PhD student in Network and Data Science at Central European University, Vienna.</p>
 
@@ -34,8 +64,11 @@
   <p>Broadly, I am interested in studying real-world problems in social, economic and technological systems through original, principled mathematical and computational solutions. Currently, I’m working in applications of Statistics and Data Science in the Social Sciences and Urban Studies. Mostly studying Spatial Statistics, Bayesian Statistics, Causal Inference, ML and Networks.</p>
 
   <p>Happy to hear from you at <span class="email">Birello_Piero@phd.ceu.edu</span>.</p>
-
+    
+  </div>
+  
 </body>
 </html>
+
 
 
